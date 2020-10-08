@@ -5,6 +5,11 @@
 
 {% block content %}
 <h1>Homepage</h1>
+<br>
+<form class="form-inline mt-2 mt-md-0" action="{% url 'search_results' %}" method="get">
+  <input type="text" name="q" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+</form>
+<br>
 <img class="book" src="{% static 'images/beginners.jpg' %}">
 <img class="book" src="{% static 'images/professionals.jpg' %}">
 <img class="book" src="{% static 'images/api.jpg' %}">
